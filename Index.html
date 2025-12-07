@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dodde Trisanthi Portfolio</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+    
+      font-family: 'Times New Roman', Times, serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #212529;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(to right, #7F072D, #C31432);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .navbar .nav-link { color: #fff; font-weight: 500; transition: .3s; }
+    .navbar .nav-link:hover { color: #ffd6e0; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #89f7fe, #66a6ff);
+      padding: 80px 20px;
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+    .hero .lead { font-size: 1.1rem; }
+    .hero .btn-resume {
+      background: linear-gradient(to right, #fc6076, #ff9a44);
+      border: none;
+      padding: 12px 22px;
+      font-size: 1rem;
+      color: white;
+      border-radius: 25px;
+      transition: .25s ease;
+    }
+    .hero .btn-resume:hover { transform: scale(1.03); }
+
+    /* Sections */
+    .section-title { margin-bottom: 1.5rem; }
+    .project-card { border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
+
+    /* Resume embed */
+    #resumePreview {
+      width: 100%;
+      height: 600px;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      padding: 25px 0;
+      text-align: center;
+      font-weight: 600;
+      color: #333;
+      margin-top: 40px;
+    }
+
+    /* Responsive smaller height for mobile */
+    @media (max-width: 768px) {
+      #resumePreview { height: 420px; }
+      .hero { padding: 40px 16px; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-white" href="#">DODDE TRISANTHI</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Hello, I'm Trishanthi 👋</h1>
+    <p class="lead">Fresher | Passionate about creating interactive websites</p>
+    <!-- View Resume opens PDF in new tab -->
+    <a href="CV.pdf" target="_blank" class="btn btn-resume me-2">View Resume</a>
+    <!-- Download Resume -->
+    <a href="CV.pdf" download class="btn btn-light">Download Resume</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container my-5">
+  <h2 class="text-center section-title">About Me</h2>
+  <p>I'm an aspiring front-end developer with a strong passion for creating beautiful and responsive web pages. I enjoy working with HTML, CSS, and JavaScript to bring ideas to life on screen, and I'm learning modern tools like React and Angular to build interactive user experiences. I love designing smooth, user-friendly interfaces and constantly look for ways to improve my skills and build projects that truly connect with people.</p>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container my-5">
+  <h2 class="text-center section-title">Projects</h2>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card project-card p-3">
+        <h5 class="card-title">Age Calculator</h5>
+        <p class="card-text">This project is a playful and interactive age calculator that transforms a simple utility into a joyful experience. Users enter their name and date of birth, and the app calculates their exact age in years, months, and days. But the real magic happens on their birthday — Magic shows on screen </p>
+  
+  <div class="button-group">
+    <a href="https://github.com/DTrisanthi24/Age_Calculator.git" target="_blank" class="btn btn-outline-primary"">View Code</a>
+    <a href="https://github.com/DTrisanthi24/Age_Calculator.ppt" target="_blank" class="btn btn-outline-primary"">Project Presentation</a>
+  </div>
+  </div>
+      </div>
+</div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card project-card p-3">
+        <h5 class="card-title">Responsive Portfolio</h5>
+        <p class="card-text">Crafted using HTML, CSS, and Bootstrap 5. Prioritizing layout aesthetics, interactivity, and personal branding.</p>
+        <a href="#" target="_blank" class="btn btn-outline-primary">Live Site</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container my-5">
+  <h2 class="text-center section-title">Skills</h2>
+  <ul class="list-group list-group-horizontal flex-wrap justify-content-center">
+    <li class="list-group-item">HTML</li>
+    <li class="list-group-item">CSS</li>
+    <li class="list-group-item">JavaScript</li>
+    <li class="list-group-item">React</li>
+    <li class="list-group-item">Java</li>
+    <li class="list-group-item">Spring Boot</li>
+    <li class="list-group-item">MySQL</li>
+    <li class="list-group-item">Python</li>
+    <li class="list-group-item">Power BI</li>
+  </ul>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="container my-5">
+  <h2 class="text-center section-title">Resume</h2>
+  <p class="text-center">Preview my resume below. Click <strong>View Resume</strong> to open in a new tab or use the download button.</p>
+
+  <!-- PDF preview via iframe (works in modern browsers) -->
+  <div class="mb-3">
+    <iframe id="resumePreview" src="CV.pdf#view=FitH" title="Resume Preview"></iframe>
+  </div>
+
+  <div class="text-center">
+    <a href="CV.pdf" target="_blank" class="btn btn-primary me-2">Open Resume in New Tab</a>
+    <a href="CV.pdf" download class="btn btn-outline-primary">Download Resume (PDF)</a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container my-5">
+  <h2 class="text-center section-title">Contact Me</h2>
+  <form id="contactForm">
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Your Email" required>
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Dodde Trishanthi. Built with Bootstrap 5 💛</p>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Thanks for reaching out, Trishanthi will get back to you soon!");
+  });
+</script>
+</body>
+</html>

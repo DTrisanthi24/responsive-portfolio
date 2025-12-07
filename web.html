@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dodde Trisanthi Portfolio</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #212529;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(to right, #7F072D, #C31432);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .navbar .nav-link { color: #fff; font-weight: 500; transition: .3s; }
+    .navbar .nav-link:hover { color: #ffd6e0; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #89f7fe, #66a6ff);
+      padding: 80px 20px;
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+    .hero .lead { font-size: 1.1rem; }
+    .hero .btn-resume {
+      background: linear-gradient(to right, #fc6076, #ff9a44);
+      border: none;
+      padding: 12px 22px;
+      font-size: 1rem;
+      color: white;
+      border-radius: 25px;
+      transition: .25s ease;
+    }
+    .hero .btn-resume:hover { transform: scale(1.03); }
+
+    /* Sections */
+    .section-title { margin-bottom: 1.5rem; }
+    .project-card { border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
+
+    /* Resume embed */
+    #resumePreview {
+      width: 100%;
+      height: 600px;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      padding: 25px 0;
+      text-align: center;
+      font-weight: 600;
+      color: #333;
+      margin-top: 40px;
+    }
+
+    /* Responsive smaller height for mobile */
+    @media (max-width: 768px) {
+      #resumePreview { height: 420px; }
+      .hero { padding: 40px 16px; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-white" href="#">DODDE TRISANTHI</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Hello, I'm Trisanthi 👋</h1>
+    <p class="lead">Fresher | Passionate about creating interactive websites</p>
+    <!-- View Resume opens PDF in new tab -->
+    <a href="https://drive.google.com/file/d/1dvXEn-qm1k9EoG6kmj0W5gFDXWI1XjLI/view?usp=sharing" target="_blank" class="btn btn-resume me-2">View Resume</a>
+    <!-- Download Resume -->
+    
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container my-5">
+  <div class="card project-card p-3">
+  <h2 class="text-center section-title"><b>About Me</b></h2>
+  <p>I'm an aspiring front-end developer with a strong passion for creating beautiful and responsive web pages. I enjoy working with HTML, CSS, and JavaScript to bring ideas to life on screen, and I'm learning modern tools like React to build interactive user experiences. I love designing smooth, user-friendly interfaces and constantly look for ways to improve my skills and build projects that truly connect with people.</p>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container my-5">
+  <h2 class="text-center section-title"><b>Projects</b></h2>
+  <div class="row justify-content-center">
+    
+    <!-- Smart DOB Analyzer Project -->
+    <div class="col-md-6 mb-4">
+      <div class="card project-card p-4 h-100">
+        <h5 class="card-title"><b><i>Age Calculator</b></i></h5>
+        <p class="card-text">
+          A playful and interactive age calculator that transforms a simple utility into a joyful experience. 
+          Users enter their name and date of birth, and the app calculates their exact age in years, months, and days. 
+          On birthdays, the screen comes alive with animations, music, and celebratory effects.
+        </p>
+        <a href="https://github.com/DTrisanthi24/Age_Calculator.git" target="_blank" class="btn btn-outline-primary">View Code</a>
+      </div>
+    </div>
+
+    <!-- Responsive Portfolio Project -->
+    <div class="col-md-6 mb-4">
+      <div class="card project-card p-4 h-100">
+        <h5 class="card-title"><b><i>Responsive Portfolio</b></i></h5>
+        <p class="card-text">
+          A personal portfolio website built with HTML, CSS, and Bootstrap 5. 
+          It highlights my projects, skills, and creative identity with a responsive layout, interactive design, and clean aesthetics.
+         The layout features a dynamic hero section, interactive project cards, animated skill flips
+        </p>
+        <a href="https://github.com/DTrisanthi24/Front-End-_Project.git" target="_blank" class="btn btn-outline-primary">View Code</a>
+      </div>
+    </div>
+
+<!-- Skills -->
+<section id="skills" class="container my-5">
+  <h2 class="text-center section-title"><b>Skills</b></h2> 
+<div class="skill-flip-container d-flex flex-wrap justify-content-center">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">HTML</div>
+      <div class="flip-card-back">Hyper Text Markup Language</div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">CSS</div>
+      <div class="flip-card-back">Cascading Styling Sheets</div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">JavaScript</div>
+      <div class="flip-card-back">Scripting Language</div>
+    </div>
+    
+  <!-- Repeat for other skills -->
+</div>
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">MySQL</div>
+      <div class="flip-card-back">Structural Query Language</div>
+    </div>
+
+<style>
+.skill-flip-container .flip-card {
+  background: transparent;
+  width: 120px;
+  height: 60px;
+  margin: 10px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background: #6a11cb;
+}
+.flip-card-back {
+  background: #2575fc;
+  transform: rotateY(180deg);
+}
+</style>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container my-5">
+  <h2 class="text-center section-title"><b>Contact Me</b></h2>
+  <form id="contactForm">
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Your Email" required>
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Dodde Trishanthi. Built with Bootstrap 5 💛</p>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Thanks for reaching out, Trishanthi will get back to you soon!");
+  });
+</script>
+
+</body>
+</html>
